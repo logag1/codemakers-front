@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'intelone-mono-font-family-regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dovemayo_gothic';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main_container {
+  text-align: center;
+  width: 40%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: wheat;
+}
+
+.nickname {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.main_container button {
+  padding: 5px;
+  width: 80%;
+  height: 70px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: #297DEC;
+  color: white;
+  font-family: Dovemayo_gothic;
+  margin-top: auto;
+  margin-bottom: 60px;
+}
+
+.main_container button:hover {
+  transition: scale(1.1);
+  background-color: #297DEC;
+}
+
+.main_container h1 {
+  font-size: 60px;
+  font-family: intelone-mono-font-family-regular;
+  margin-top: 50px;
+}
+
+.input_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.input {
+  width: 300px;
+  height: 40px;
+  border: 1.5px solid lightgray;
+  border-radius: 10px;
+  margin: 0px 10px;
+  outline: none;
+  font-family: Dovemayo_gothic;
+  font-size: 20px;
+}
+
+.before_write_alert {
+  width: 80%;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 20px 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.before_write_alert span {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.before_write_alert li {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: Dovemayo_gothic;
+  color: black;
+  text-align: left;
+}
+
+.before_write_alert li::marker {
+  color: black;
+}
+
+.main_logo {
+  width: 400px;
+  height: 400px;
+  margin-top: 40px;
+}
+
+.error_text {
+  color: red;
+  font-size: 25px;
+  font-family: Dovemayo_gothic;
+  font-weight: 600;
+}
